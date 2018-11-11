@@ -9,3 +9,11 @@
 else:
     print ("False")
 ```
+
+  we can use "\" to seperate long code into several lines
+  
+```
+total = item_one + \
+        item_two + \
+        item_three
+```
