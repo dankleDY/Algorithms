@@ -2,10 +2,10 @@
   1.1 curly brace vs indentation
   Python doesn't use curly braces to present a block of code(a function, a class, a loop body), all it uses is indentation. 
   e.g.
-  '''
+  ```
   if True:
     #可以在同一行中使用多条语句，语句之间使用分号(;)分割。
     print ("True");print ("True")
 else:
     print ("False")
-  '''
+    ```
