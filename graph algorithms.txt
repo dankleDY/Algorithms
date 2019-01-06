@@ -1,0 +1,70 @@
+Graph algorithms
+
+
+Shortest path from A to all
+
+1. Unweighted 
+DFS
+    Stack.
+    Can detect cycles.
+    Can be used in internet crawling.
+    Cannot promise the shortest path, so we need BFS.
+
+BFS 
+    Queue.
+    Can find the shortest path.
+
+Runtime
+    Both O(V+E)
+
+
+2. Weighted
+Dijkstra
+    Priority Queue.
+    Iteratively ﬁnd the next closest vertex. Then use that vertex to update the predictions of distances to all vertexes.
+    
+    Runtime depends on how we implemet Priority Queue.
+
+
+3. Weighted and negative-cost 
+Bellman-Ford
+    Go to all reachable vertexes and calculate the new distance to each vertex.
+    Keep track of distance and prev vertex, make all possible positive update of distance(and prev)
+    
+    Can detect negative cycle - arbitrage in Finance
+    Runtime O(n^3)
+
+
+4. Find the shortest path btw all vertexes
+Floyd-Warshall
+    Run Bellman-Ford V times.
+    But use use-it-or-lose-it and DP table.
+ 
+
+
+
+Minimun spanning tree
+
+1. Prim's 
+    Start from a random vertex    
+    Add the reachable lightest edge to the tree, avoid cycle
+
+2. Kruskal's 
+    Add the lightest edge to the tree, avoid cycle.
+
+The cut property
+    A cut is a set of edges without which the graph will be seperated into two unconnected parts.
+    The lightest edge in cut must be in the MST.
+
+
+P: can be solved in polynomial time
+NP: cannot be solved in polynomial time
+NPC: A NP problem that all NP problems can be reduced to it.
+    
+    
+
+reference: 
+    Duke ece 590 - Eric Autry
+    http://www.matrix67.com/blog/archives/105
+
+

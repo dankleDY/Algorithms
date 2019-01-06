@@ -1,0 +1,44 @@
+DFA, NFA, RE, TM
+
+
+Finite State Machines
+    aka
+    Finite Automata (singular: automaton)
+
+Deterministic Finite Automata
+    A DFA can process a given string and make a decision: either accept it or reject it.
+    We usually use state diagram to describe a DFA specifically.
+    Its fomal definition invloves 5 aspects: states, alphabet, transition function, start state, accepting states
+    For a given input, a DFA always makes the same decision.
+
+Regular language
+    A language is a set of strings. A language is called a regular language if some ﬁnite automaton recognizes it.
+
+Nondeterministic Finite Automata
+    Similarity: A NFA is equal to a DFA, they are equivalent. 
+    Difference:
+        A DFA is deterministic because given any input, it knows exactly which state it ends.
+        A NFA is nondeterministic because given any input, it might ends up in several states.
+        NFA can go several states upon single input, it can also choke.
+        ε (epsilon) is very important to NFAs.
+
+Regular Expression
+    Used to describe languages, like (0|1)∗
+
+DFA, NFA , RE are all equal
+
+Turing Machine
+    A more powerful model for computation
+    It operates on an infinite long tape. 
+        This tape corresponds to something like disk memory, but without addressing 
+    It can read, write and move on the tape.
+    It has single accepting and reject state.
+        We can describe an algorithm of this TM just like we are using C++ or python.
+    TM is the most powerful.
+
+
+reference: 
+    Duke ece 590 - Eric Autry
+
+
+
