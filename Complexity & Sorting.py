@@ -5,12 +5,11 @@
 #     2. How much time does it take?
 #     3. Can we do better?
 
-# Complexity is a measure of the functionality of algorithms. We usually use big o, f ∈ O(n)
-
 # We think of programs as Turing Machines to decide its complexity. (Scan through the string, O(n))
+# O(n) is good, we prefer scanning a string several times to n times.
 
 # Sorting
-#     The bound of sorting is O(nlogn)
+#     The bound of sorting is O(nlogn), usually it means recursively divide in half
 
 """
 SelectionSort(HeapSort use min-heap to do the same thing)
